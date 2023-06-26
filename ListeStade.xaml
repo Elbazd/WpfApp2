@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp2.ListeStade"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="ListeStade" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="datagrid2" AutoGenerateColumns="False"  Margin="219,118,219,118">
+            <DataGrid.Columns >
+                <DataGridTextColumn  Header="Nom du stade" Binding="{Binding nom_stade}"/>
+                <DataGridTextColumn  Header="Id" Binding="{Binding Id}"/>
+            </DataGrid.Columns>
+
+        </DataGrid>
+        <Image Source="/Data/Stade.png" HorizontalAlignment="Left" Height="199" Margin="604,0,0,0" VerticalAlignment="Center" Width="208"/>
+        <Image Source="/Data/Stade.png" HorizontalAlignment="Left" Height="199" Margin="38,0,0,0" VerticalAlignment="Center" Width="208"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,51,0,0" TextWrapping="Wrap" Text="Lister les stades" VerticalAlignment="Top" Height="46" Width="254" FontSize="36"/>
+        <Button Content="Lister les stades" HorizontalAlignment="Center" Margin="0,338,0,0" VerticalAlignment="Top" Height="32" Width="180" Click="Button_Click"/>
+        <Button Content="Revenir en arrière" HorizontalAlignment="Center" Margin="0,379,0,0" VerticalAlignment="Top" Height="29" Width="128" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
